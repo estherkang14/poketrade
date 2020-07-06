@@ -1,0 +1,9 @@
+<%= form_for @user do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %> <br>
+<%= f.label :location%>
+<%= f.text_field :location %> <br>
+<%= f.label :pokemon_card_ids, 'Add your Pokemon cards' %>
+<%= f.collection_check_boxes :pokemon_card_ids, PokemonCard.all, :id, :title %> <br>
+<%= f.submit %>
+<%end%>

@@ -1,0 +1,11 @@
+
+<img src="<%=@pokemon_card.image_url%>"> <br>
+<div class="info">
+<%= @pokemon_card.title %> <br>
+<%= @pokemon_card.pokemon_card_count %> Users have this card in their collection
+</div>
+
+<div class="actions">
+<%= link_to "View all cards", pokemon_cards_path %> <br>
+<%= link_to "View all users", users_path %>
+</div> 
