@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
+    before_action :authorized, except: [:new, :create]
     def index
         @users = User.all
     end
 
     def show
         @user = User.find(params[:id])
+      
     end
 
     def new
@@ -14,7 +16,8 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-            redirect_to user_path(@user.id)
+            
+            redirect_to login_path
         else
             render :new
         end
@@ -43,6 +46,6 @@ class UsersController < ApplicationController
 
     private
     def user_params
-        params.require(:user).permit(:name, :location, :pokemon_card_ids => [])
+        params.require(:user).permit(:name, :password, :location, :pokemon_card_ids => [])
     end
 end

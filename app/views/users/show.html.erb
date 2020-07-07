@@ -5,11 +5,16 @@
 <h2> Card Collection: </h2><br>
 <div class="collection">
     <% @user.pokemon_cards.each do |card| %>
+    <%= link_to  pokemon_card_path(card.id) do%>
         <img src="<%= card.image_url %>">
+        <%end %>
     <% end %>
 </div>
 
 <div class="actions">
     <%= link_to "View Other Users", users_path, class: "button is-info" %><br>
     <%= link_to "Edit this User", edit_user_path, class: "button is-info" %><br>
+    <%= link_to "See all cards", pokemon_cards_path, class: "button is-info" %>
 </div>
+
+

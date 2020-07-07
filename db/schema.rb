@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_06_195702) do
+ActiveRecord::Schema.define(version: 2020_07_07_190715) do
 
   create_table "pokemon_card_types", force: :cascade do |t|
     t.integer "pokemon_card_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_07_06_195702) do
     t.string "title"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false 
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "types", force: :cascade do |t|
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_07_06_195702) do
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
   end
 
 end

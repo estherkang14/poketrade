@@ -7,4 +7,8 @@ class PokemonCard < ApplicationRecord
     def pokemon_card_count
         self.users.count
     end
+
+    def self.type?(pok_type)
+        PokemonCard.where(types:pok_type)
+    end
 end
