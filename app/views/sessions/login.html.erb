@@ -1,4 +1,4 @@
-<h1> Log In </h1>
+<h1 class="title"> Log In </h1>
 
 
 <% if flash[:error] %>
@@ -11,4 +11,8 @@
         <%= text_field_tag :name %>
         <%= submit_tag "Log In" %>
     <% end %> 
+</div>
+
+<div class="new_user">
+    <%= link_to "Create a New User", new_user_path %>
 </div>
