@@ -1,3 +1,20 @@
+<%= form_tag pokemon_cards_path, method: "GET" do %>
+    <%= radio_button_tag 'types', 'Psychic' %>
+    <%= label_tag "Psychic" %>
+    <%= radio_button_tag 'types', 'Fire' %>
+    <%= label_tag "Fire" %>
+    <%= radio_button_tag 'types', 'Grass' %>
+    <%= label_tag "Grass" %>
+    <%= radio_button_tag 'types', 'Fighting' %>
+    <%= label_tag "Fighting" %>
+    <%= radio_button_tag 'types', 'Colorless' %>
+    <%= label_tag "Colorless" %>
+    <%= radio_button_tag 'types', 'Lightning' %>
+    <%= label_tag "Lightning" %>
+    <%= radio_button_tag 'types', 'Water' %>
+    <%= label_tag "Water" %>
+    <%= submit_tag "Filter" %>
+<% end %>
 
 
 <% @pokemon_cards.each do |card| %>
@@ -5,5 +22,4 @@
     <img src="<%= card.image_url %>">
     <%end %>
 <%end%>
- 
  

@@ -1,0 +1,11 @@
+
+
+<%= form_for @pokemon_card do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+    <%= f.label :type_ids %>
+    <%= f.collection_select :type_ids, Type.all, :id, :name %>
+    <%= f.submit %>
+<% end %>
