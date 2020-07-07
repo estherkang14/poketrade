@@ -1,5 +1,7 @@
+<h3>Click a User to View Their Collection:</h3>
+ 
  <ul>
- <%@users.each do |user| %> 
-<strong> <li><%= link_to user.name, user_path(user.id)%></li> </strong>
- <%end %>
+    <%@users.each do |user| %> 
+        <strong> <li><%= link_to user.name, user_path(user.id)%></li> </strong>
+    <%end %>
  </ul>

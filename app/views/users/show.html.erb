@@ -1,14 +1,15 @@
-<h1 id="user_name"><%= @user.name %></h1>
+<h1 class="title"><%= @user.name %></h1>
 
 <div id="location">Location: <%= @user.location %></div>
-
+<br>
+<h2> Card Collection: </h2><br>
 <div class="collection">
-<% @user.pokemon_cards.each do |card| %>
-<%= card.title %>
-<img src="<%card.image_url%>">
-<%end %>
+    <% @user.pokemon_cards.each do |card| %>
+        <img src="<%= card.image_url %>">
+    <% end %>
 </div>
 
 <div class="actions">
-<%= link_to "Edit this User", edit_user_path, class: "button is-info" %><br>
+    <%= link_to "View Other Users", users_path, class: "button is-info" %><br>
+    <%= link_to "Edit this User", edit_user_path, class: "button is-info" %><br>
 </div>

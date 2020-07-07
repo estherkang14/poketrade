@@ -1,9 +1,7 @@
 
 <% @pokemon_cards.each do |card| %><br>
-<%= link_to card.title, pokemon_card_path(card.id)%><br> <br>
- <img src="<%= card.image_url %>">
- 
- 
- <%end%>
+    <%= link_to card.title, pokemon_card_path(card.id)%><br> <br>
+    <img src="<%= card.image_url %>">
+<%end%>
  
  
