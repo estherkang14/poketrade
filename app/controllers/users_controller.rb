@@ -27,8 +27,10 @@ class UsersController < ApplicationController
     def update
         @user = User.find(params[:id])
         # byebug
-        if @user.update(users_params)
+        if @user.update(user_params)
+           
             redirect_to user_path(@user.id)
+           
         else
             render :edit
         end
@@ -41,7 +43,7 @@ class UsersController < ApplicationController
     end 
 
     private
-    def users_params
+    def user_params
         params.require[:user].permit(:name,:location,:pokemon_card_ids=>[])
     end
 end
