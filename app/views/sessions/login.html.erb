@@ -1,4 +1,27 @@
-<h1 class="title"> Log In </h1>
+<nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/pokemon_cards">
+                <img src="https://cdn2.iconfinder.com/data/icons/minimal-4/100/pokeball-512.png"  width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <section class="hero">
+        <figure class="image">
+            <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/go/pokemon-party.jpg">
+        </figure>
+    </section>
+
+    <section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-4">
+              <h1 class="title is-3 "> Log In </h1>
+      
 
 
 <% if flash[:error] %>
@@ -7,14 +30,32 @@
 
 <div class="login_form">
     <%= form_tag login_path do %>
+    <div class="field">
+    <div class="control"
         <%= label :name, "Username:" %>
         <%= text_field_tag :name %>
+    </div>
+    </div>
+    <div class="field">
+    <div class="control">
         <%= label :password, "Password" %>
         <%= password_field_tag :password %>
+    </div>
+    </div>
         <%= submit_tag "Log In" %>
     <% end %> 
 </div>
 
+</section>
+<div class="columns is-centered">
+            <div class="column is-4">
+
 <div class="new_user">
     <%= link_to "Create a New User", new_user_path %>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>  
+</nav>
