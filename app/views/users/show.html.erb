@@ -4,11 +4,23 @@
 <br>
 <h2> Card Collection: </h2><br>
 <div class="collection">
-    <% @user.pokemon_cards.each do |card| %>
-    <%= link_to  pokemon_card_path(card.id) do%>
-        <img src="<%= card.image_url %>">
-        <%end %>
-    <% end %>
+    <!-- # <% @user.pokemon_cards.each do |card| %>
+    # <%= link_to  pokemon_card_path(card.id) do%>
+    #     <img src="<%= card.image_url %>">
+    #     <%end %>
+    # <% end %> -->
+
+    <div class="columns is-multiline is-marginless">
+        <% @user.pokemon_cards.each do |card| %>
+            <div class="column is-one-fifth">
+            
+                <a href="/pokemon_cards/<%=card.id%>">
+                    <img src="<%= card.image_url %>">
+                </a>
+          
+            </div>
+        <% end %>
+    </div> 
 </div>
 
 <div class="actions">

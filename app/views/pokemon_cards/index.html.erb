@@ -1,15 +1,12 @@
-<div class="card">
+<div class="columns is-multiline is-marginless">
     <% @pokemon_cards.each do |card| %>
-        <div class="card-image">
-            <figure class="image is-3by4">
-                <a href="/pokemoncards/<%=card.id%>"><img src="<%= card.image_url %>"></a>
-                <!-- <%= link_to  pokemon_card_path(card.id) do%>
+        <div class="column is-one-fifth is-marginless">
+                <a href="/pokemon_cards/<%=card.id%>">
                     <img src="<%= card.image_url %>">
-                <%end %> -->
-            </figure>
+                </a>
         </div>
     <% end %>
-</div>
+</div> 
 
 
 
