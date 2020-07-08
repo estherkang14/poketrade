@@ -17,3 +17,23 @@
  @import "bulma";
 
  .has-bg-img { background: url('/assets/images/pokemon2.jpg')center center; background-size:cover; }
+
+ #main_container {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://lh3.googleusercontent.com/proxy/MX4bA0PfI04Y6jnaNQQs0Kl3o8fUOZ5GvdjCZlwctSMSt24_mjHSvyFm0misWxTYUbYazwIwWcwG2qr7x3dRnXwd_JAD77cwY5x-qgCHVK2mu_nmODvA5gD-HEpWHH2MSv0LVvx_vOEhwJFIFg) no-repeat center center fixed;
+     background-size: cover;
+     
+ }
+
+ .hero.is-info {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://lh3.googleusercontent.com/proxy/MX4bA0PfI04Y6jnaNQQs0Kl3o8fUOZ5GvdjCZlwctSMSt24_mjHSvyFm0misWxTYUbYazwIwWcwG2qr7x3dRnXwd_JAD77cwY5x-qgCHVK2mu_nmODvA5gD-HEpWHH2MSv0LVvx_vOEhwJFIFg) no-repeat center center fixed;
+    background-size: cover;
+ }
+
+ body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://lh3.googleusercontent.com/proxy/MX4bA0PfI04Y6jnaNQQs0Kl3o8fUOZ5GvdjCZlwctSMSt24_mjHSvyFm0misWxTYUbYazwIwWcwG2qr7x3dRnXwd_JAD77cwY5x-qgCHVK2mu_nmODvA5gD-HEpWHH2MSv0LVvx_vOEhwJFIFg) no-repeat center center fixed;
+    background-size: cover;
+ }

@@ -1,28 +1,78 @@
-<nav class="navbar is-dark">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/pokemon_cards">
-                <img src="https://cdn2.iconfinder.com/data/icons/minimal-4/100/pokeball-512.png"  width="112" height="28">
-            </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing - Free Bulma template</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.8.2-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/landing.css">
+</head>
+<body>
+    <section class="hero is-info is-fullheight" >
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                            <img src="https://cdn11.bigcommerce.com/s-sq9zkarfah/images/stencil/1280x1280/products/120616/208029/Pokemon-Logo-Pokeball-Gaming-Vinyl-Decal-Sticker__70598.1511167281.jpg?c=2&imbypass=on" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <span>Home</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fa fa-superpowers"></i>
+                                    </span>
+                                    <span>Examples</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fa fa-book"></i>
+                                    </span>
+                                    <span>Documentation</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>View Source</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             </div>
-        </div>
 
-        <section class="hero">
-        <figure class="image">
-            <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/go/pokemon-party.jpg">
-        </figure>
-    </section>
-
-    <section class="section">
-    <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-4">
-              <h1 class="title is-3 "> Log In </h1>
-      
-
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title">
+                            Login
+                        </h1>
+                        <h2 class="subtitle">
 
 <% if flash[:error] %>
     <div class="error"> <%= flash[:error] %> </div>
@@ -53,9 +103,14 @@
 <div class="new_user">
     <%= link_to "Create a New User", new_user_path %>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>  
-</nav>
+                        </h2>
+                        
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+</body>
+</html>
+
