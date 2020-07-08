@@ -16,21 +16,34 @@
 
  @import "bulma";
 
- .has-bg-img { background: url('/assets/images/pokemon2.jpg')center center; background-size:cover; }
+// nav {
+//    padding:1em;
+// }
 
-//  #main_container {
-//      display: flex;
-//      justify-content: center;
-//      flex-direction: column;
-//      align-items: center;
-//      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://lh3.googleusercontent.com/proxy/MX4bA0PfI04Y6jnaNQQs0Kl3o8fUOZ5GvdjCZlwctSMSt24_mjHSvyFm0misWxTYUbYazwIwWcwG2qr7x3dRnXwd_JAD77cwY5x-qgCHVK2mu_nmODvA5gD-HEpWHH2MSv0LVvx_vOEhwJFIFg) no-repeat center center fixed;
-//      background-size: cover;
-     
-//  }
+.title {
+   color: white;
+}
 
- 
+.navbar-menu a {
+   color: white;
+}
 
-//  body {
-//     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://lh3.googleusercontent.com/proxy/MX4bA0PfI04Y6jnaNQQs0Kl3o8fUOZ5GvdjCZlwctSMSt24_mjHSvyFm0misWxTYUbYazwIwWcwG2qr7x3dRnXwd_JAD77cwY5x-qgCHVK2mu_nmODvA5gD-HEpWHH2MSv0LVvx_vOEhwJFIFg) no-repeat center center fixed;
-//     background-size: cover;
-//  }
+ #main_container {
+     display: flex;
+     height: 100vh; 
+     width: 100vw; 
+     flex-wrap: wrap; 
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+   //   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) no-repeat center center fixed;
+   //   background-size: cover;
+     color: white;
+ }
+
+
+
+ #bg {
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) no-repeat center center fixed;
+   background-size: cover;
+ }
