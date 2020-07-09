@@ -2,6 +2,8 @@
  
  <ul>
     <%@users.each do |user| %> 
+        <div class="subtitle is-3">
         <strong> <li><%= link_to user.name, user_path(user.id)%></li> </strong>
+        </div>
     <%end %>
  </ul>

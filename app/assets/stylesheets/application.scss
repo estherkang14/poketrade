@@ -32,26 +32,33 @@ nav {
    color: white;
 }
 
- #main_container {
-     display: flex;
-     height: 100%; 
-   //   width: 100vw; 
-     flex-wrap: wrap; 
-     justify-content: flex-start;
-     flex-direction: column;
-     align-items: center;
-   //   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) no-repeat center center fixed;
-   //   background-size: cover;
-     color: white;
-   
+.half {
+   width:50%;
+   display: table-cell;
  }
+
+//  #main_container {
+//      display: flex;
+//      height: 100%; 
+//    //   width: 100vw; 
+//      flex-wrap: wrap; 
+//      justify-content: flex-start;
+//      flex-direction: column;
+//      align-items: center;
+//    //   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) no-repeat center center fixed;
+//    //   background-size: cover;
+//      color: white;
+   
+//  }
 
 
 
  body {
    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) no-repeat center center fixed;
+   
    background-size: cover;
    background-attachment: fixed;
    height: 100%;
-   margin: 0;
+   width: 100%
+   // margin: 0;
  }

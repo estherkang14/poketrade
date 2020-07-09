@@ -22,29 +22,30 @@
       
     <nav class="navbar is-dark">
         <div class="navbar-menu">
+          <div class ="buttons">
   
-          <%= link_to "View All Cards", pokemon_cards_path, class: "navbar-item" %>
+          <%= link_to "View All Cards", pokemon_cards_path, class: "navbar-item, button is-light is-rounded" %>
           
             <% if session[:user_id] %>
-              <%= link_to "Home", user_path(current_user.id), class: "navbar-item" %>
-              <%= link_to "View All Users", users_path, class: "navbar-item" %> 
+               <%= link_to "Home", user_path(current_user.id), class: "navbar-item, button is-light is-rounded" %>
+              <%= link_to "View All Users", users_path, class: "navbar-item, button is-light is-rounded" %> 
                 <div class="navbar-end">
-                  <%= link_to "Log Out", logout_path, class: "navbar-item" %>
+                  <%= link_to "Log Out", logout_path, class: "navbar-item, button is-light is-rounded is-pulled-right" %>
                 </div>
             <% else %>
               <div class="navbar-end">
-                <%= link_to "Log In", login_path, class: "navbar-item" %>
+                <%= link_to "Log In", login_path, class: "navbar-item, button is-light is-rounded is-pulled-right" %>
               </div>
             <% end %> 
-            
+          </div>
     
         </div>
     </nav>
     <% end %>
 
-   <div class="container is-fluid" id="main_container">
+   <%# <div class="container is-fluid" id="main_container"> %>
     <%= yield %>
-    </div>
+    <%# </div> %>
   
 
   </body>

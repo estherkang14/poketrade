@@ -1,11 +1,15 @@
 
 
-<div class="introduction"
-    <h1>Welcome to PokeTrade!</h1>
+
+     <h1 class="title is-1 has-text-warning has-text-centered">Welcome to PokeTrade!</h1>
     <br>
-    <h3>
+<div class="colums">
+    <div >
+    <h3 class="subtitle is-4 is-light has-text-light has-text-centered " >
     This is an App that allows you to show off your Pokemon Card collection and trade cards with other users!
     <br>
-    To get started, please Create an Account or Log In!
+    To get started, please <%= link_to "Create", new_user_path %> an account or <%= link_to "Log in!", login_path %>
     </h3>
+    </div>
+    </div>
 </div>
