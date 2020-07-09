@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="content">
-        By: <%= @post.user.name %><br>
+        By: <%= link_to @post.user.name, user_path(@post.user.id) %><br>
         <%= @post.created_at %><br>
         <%= @post.content %>  
     </div>

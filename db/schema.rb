@@ -34,13 +34,6 @@ ActiveRecord::Schema.define(version: 2020_07_09_161904) do
     t.integer "user_id"
   end
 
-  create_table "trades", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "pokemon_card_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "types", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false

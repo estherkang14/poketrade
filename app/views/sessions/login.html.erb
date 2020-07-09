@@ -1,32 +1,45 @@
-<html>
-<h1 class="title is-white">Log In</h1>
+<h1 class="title has-text-warning">Log In</h1>
+
 <body>
 <% if flash[:error] %>
     <div class="error"> <%= flash[:error] %> </div>
 <% end %>
 
-<div class="login_form">
-    <%= form_tag login_path do %>
-    <div class="field">
-    <div class="control">
-        <%= label :name, "Username:" %>
-        <%= text_field_tag :name %>
-    </div>
-    </div>
-    <div class="field">
-    <div class="control">
-        <%= label :password, "Password" %>
-        <%= password_field_tag :password %>
-    </div>
-    </div>
-        <%= submit_tag "Log In" %>
-    <% end %> 
+
+
+
+<%= form_with url: login_path, builder: BulmaFormBuilder::FormBuilder  do |f| %>
+
+<%= f.text_field :name%><br>
+
+<%= f.password_field :password %><br>
+
+<div class="has-text-centered">
+<%= f.submit "Login", class: "button " %>
 </div>
+<% end %> 
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="subtitle is-5 has-text-centered">
+Don't have an account? <br> <br> <%= link_to "Create one!", new_user_path, class: "button" %>
+</div>
+</body>
 
 
 <!-- <div class="columns">
 <div class="column is-half is-offset-one-quarter">
-<%= form_tag login_path, builder: BulmaFormBuilder::FormBuilder  do  %>
+<%= form_for :user, builder: BulmaFormBuilder::FormBuilder  do |f| %>
     <div class="field">
     <div class="control">
         <%= label :name, "Username:" %>
@@ -42,14 +55,4 @@
         <%= submit_tag "Log In" %>
 <% end %> 
 </div>
-</div> -->
-
-
-
-
-
-<br>
-Don't have an account? <%= link_to "Create one!", new_user_path, class: "button" %>
-</body>
-</html>
-
+</div>  -->
