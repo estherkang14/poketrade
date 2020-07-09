@@ -14,10 +14,21 @@
             width: 145px;
             height: 210px;
         }
+
+         .hero{
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) center / cover;
+        }
+
+        /* @media (max-width 1024px) { .hero {background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) center / cover;}}
+        @media (max-width 768px) { .hero {background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.desktopimages.org/pictures/2013/0928/1/pokemon-black-background-722457.jpg) center / cover;}} */ 
     </style>
   </head>
+  
 
   <body>
+
+  <!--<section class="hero is-fullheight">  -->
+
     <% unless controller_name == "sessions" && action_name == "login" %>
       
     <nav class="navbar is-dark">
@@ -36,17 +47,20 @@
               <div class="navbar-end">
                 <%= link_to "Log In", login_path, class: "navbar-item, button is-light is-rounded is-pulled-right" %>
               </div>
+              
             <% end %> 
           </div>
     
         </div>
     </nav>
+    
     <% end %>
 
    <%# <div class="container is-fluid" id="main_container"> %>
+   
     <%= yield %>
     <%# </div> %>
   
-
+<!--</section> -->
   </body>
 </html>
