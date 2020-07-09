@@ -1,8 +1,9 @@
-<h1 class="title"><%= @user.name %></h1>
-<body>
-<div id="location">Location: <%= @user.location %></div>
+<body class="has-text-centered">
+<h1 class="title is-1"><%= @user.name %></h1>
+
+<div id="location" class="subtitle is-4 is-white">Location: <%= @user.location %></div>
 <br>
-<h2> Card Collection: </h2><br>
+<h2 class="subtitle is-4"> Card Collection: </h2><br>
 <div class="collection">
     <!-- # <% @user.pokemon_cards.each do |card| %>
     # <%= link_to  pokemon_card_path(card.id) do%>

@@ -56,6 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem "bulma-rails", "~> 0.9.0"
+gem 'bulma_form_builder', '~> 0.1.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 gem 'rest-client'
