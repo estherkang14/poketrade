@@ -4,9 +4,9 @@
 <%= form_for @user, builder: BulmaFormBuilder::FormBuilder  do |f| %>
 
 <%= f.text_field :name%><br>
-<%= f.label :password, "Password" %>
+
 <%= f.password_field :password %><br>
-<%= f.label :location, "Location" %>
+
 <%= f.text_field :location %> <br>
 <%= f.collection_check_boxes :pokemon_card_ids, PokemonCard.all, :id, :title %> <br>
 <%= f.submit %>

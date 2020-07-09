@@ -5,7 +5,13 @@
         </div>
     </div>
     <div class="content">
+        By: <%= @post.user.name %><br>
         <%= @post.created_at %><br>
         <%= @post.content %>  
     </div>
 </div>
+<br>
+<% if session[current_user.id] %>
+<%= link_to "Edit this Post", edit_post_path, class: "button" %> <br>
+<%= link_to "Delete this Post", post_path(@post.id), :method => :delete, data: {confirm: "Are you sure?"}, class: "button is-danger" %>
+<% end %>
