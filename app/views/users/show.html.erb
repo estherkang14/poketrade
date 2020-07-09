@@ -43,6 +43,7 @@
 <br><br>
 <div class="actions">
     <% if @user.id == @current_user.id %>
+        <%= link_to "Add a Post to the Trade Forum", new_post_path, class: "button is-info" %><br><br>
         <%= link_to "Edit Your Profile", edit_user_path, class: "button is-info" %>
     <% end %>
 
