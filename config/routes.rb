@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   root "application#homepage"
   resources :pokemon_cards
   resources :user_collections
