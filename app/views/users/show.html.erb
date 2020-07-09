@@ -5,11 +5,6 @@
 <br>
 <h2 class="subtitle is-4"> Card Collection: </h2><br>
 <div class="collection">
-    <!-- # <% @user.pokemon_cards.each do |card| %>
-    # <%= link_to  pokemon_card_path(card.id) do%>
-    #     <img src="<%= card.image_url %>">
-    #     <%end %>
-    # <% end %> -->
 
     <div class="columns is-multiline is-marginless">
         <% @user.pokemon_cards.each do |card| %>
@@ -24,6 +19,28 @@
     </div> 
 </div>
 
+<h2 class="subtitle is-4"> <%= @user.name %>'s Posts in the Trade Forum: </h2>
+<div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>View Posts</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+    <% @user.posts.each do |post| %> 
+      <a href="/posts/<%=post.id%>" class="dropdown-item">
+       <%= post.title %>
+      </a>
+      <%end %>
+    </div>
+  </div>
+</div>
+
+<br><br>
 <div class="actions">
     <% if @user.id == @current_user.id %>
         <%= link_to "Edit Your Profile", edit_user_path, class: "button is-info" %>

@@ -1,0 +1,23 @@
+<%= button_to "Add a New Post", new_post_path %>
+<br>
+
+<% content_for :page_title, "Trade Forum" %> 
+    <section class="section">
+        <div class="container">
+
+            <% @posts.each do |post| %>
+            
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4"><%= link_to post.title, post_path(post.id) %></p>
+                    </div>
+                </div>
+                <div class="content">
+                    <%= post.created_at %><br>
+                    <%= post.content %>  
+                </div>
+            </div>
+            <% end %>
+        </div>
+    </section>
