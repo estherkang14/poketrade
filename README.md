@@ -15,7 +15,7 @@ This application gathers its Pokemon Card data from the API: https://pokemontcg.
 1. Clone repository to your computer.
 2. Run `bundle install` to install required Gems.
 3. Run `rake db:migrate` to migrate the schema.
-4. Run `rails db:seed` to get
+4. Run `rails db:seed` to add Pokemone Cards.
 5. Run `rails s` to start the server.
 6. In your web browser, enter https://localhost:3000 to start the application
 
