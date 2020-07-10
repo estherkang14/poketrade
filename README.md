@@ -1,5 +1,6 @@
 # PokeTrade 
 A website that allows you to show off your Pokemon card collection and set up a trade with other users through the Trade forum!
+
 Flatiron School's module 2 project by Diego Zegarra and Esther Kang
 
 ## Project Details
@@ -19,10 +20,10 @@ This application gathers its Pokemon Card data from the API: https://pokemontcg.
 6. In your web browser, enter https://localhost:3000 to start the application
 
 Installed gems include:
-`gem 'better_errors', '~> 2.7', '>= 2.7.1'` (Must be in placed in `group :development`)
-`gem "bulma-rails", "~> 0.9.0"`
-`gem 'bulma_form_builder', '~> 0.1.1'`
-`gem 'simple_form', '~> 5.0', '>= 5.0.2'`
-`gem 'rest-client'`
-`gem 'json'`
-`gem "pry"`
+- `gem 'better_errors', '~> 2.7', '>= 2.7.1'` (Must be in placed in `group :development`)
+- `gem "bulma-rails", "~> 0.9.0"`
+- `gem 'bulma_form_builder', '~> 0.1.1'`
+- `gem 'simple_form', '~> 5.0', '>= 5.0.2'`
+- `gem 'rest-client'`
+- `gem 'json'`
+- `gem "pry"`
