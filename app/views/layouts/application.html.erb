@@ -26,6 +26,7 @@
           <%= link_to "View All Cards", pokemon_cards_path, class: "navbar-item, button is-light is-rounded" %>
           
             <% if session[:user_id] %>
+
                <%= link_to "Home", user_path(current_user.id), class: "navbar-item, button is-light is-rounded" %>
                <%= link_to "View All Users", users_path, class: "navbar-item, button is-light is-rounded" %> 
                <%= link_to "View Trade Forum", posts_path, class: "navbar-item, button is-light is-rounded" %> 
