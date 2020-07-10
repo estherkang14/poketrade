@@ -1,3 +1,6 @@
+
+<div class="has-text-centered">
+
 <div class="card-content">
     <div class="media">
         <div class="media-content">
@@ -10,6 +13,7 @@
         <%= @post.content %>  
     </div>
 </div>
+
 <br>
 
 <% if session[:user_id] == @post.user_id %>
@@ -17,3 +21,5 @@
 <%= link_to "Edit this Post", edit_post_path, class: "button" %> <br>
 <%= link_to "Delete this Post", post_path(@post.id), :method => :delete, data: {confirm: "Are you sure?"}, class: "button is-danger" %>
 <% end %>
+
+</div>

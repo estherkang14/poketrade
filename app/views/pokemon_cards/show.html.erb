@@ -7,16 +7,32 @@
 <%= @pokemon_card.title %> <br>
 </div>
 <div class="subtitle is-4 is-family-monospace">
-<%= @pokemon_card.pokemon_card_count %> Users have this card in their collection
+<%= @pokemon_card.pokemon_card_count %> Users have this card in their collection:
 </div>
-<ul>
-<% @pokemon_card.users.each do |user| %>
-<div class="subtitle is-4 has-text-centered is-family-monospace">
-<li><%= link_to user.name, user_path(user.id) %></li>
+
+<div class="has-text-centered">
+<div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Users with this Card</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+    <% @pokemon_card.users.each do |user| %>
+        <div class="subtitle is-4 has-text-centered is-family-monospace">
+        <%= link_to user.name, user_path(user.id) %>
+    <% end %>
+    </div>
+  </div>
 </div>
-<%end %>
-</ul>
 </div>
+<br>
+<br>
+
 
 <div class="subtitle is-4 is-family-monospace has-text-centered">
 <%= link_to "View all cards", pokemon_cards_path %> <br>
